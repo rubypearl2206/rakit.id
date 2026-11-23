@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Flora, Intan, Lusi, Meisyah">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rakit.id – Toko Komponen PC</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a href="#atas" class="logo">rakit<i>.id</i></a>
+<nav><a href="#produk">Produk</a><a href="#testimoni">Testimoni</a><a href="#kontak">Kontak</a></nav>
+<div class="search"><span>🔍</span><input id="q" type="search" placeholder="Cari RTX, Ryzen, SSD…" aria-label="Cari produk"></div>
+<button class="ib" id="mu" title="Musik" aria-label="Nyalakan musik" aria-pressed="false">🔇</button>
+<button class="ib" id="th" title="Ganti tema">🌓</button>
+<button class="ib" id="lg">👤<span class="tx"> Masuk</span></button>
+<button class="ib" id="cb" aria-label="Keranjang">🛒<b id="cn">0</b></button>
+</div></header>
+
+<main id="atas"><div class="wrap">
+<div class="hero">
+<div><h1>Rakit PC impian, dari komponen yang tepat.</h1>
+<p>Prosesor, VGA, RAM, sampai casing. Semua baru, bergaransi resmi, dikirim ke seluruh Indonesia.</p>
+<a class="btn" href="#produk">Belanja sekarang</a> <a class="btn ghost" href="#kontak">Konsultasi rakitan</a></div>
+<div class="sign"><img src="assets/hero.webp" alt="Rakit.id"><span class="cap">Cek kompatibilitas gratis lewat WhatsApp</span></div>
+</div>
+<div class="perks"><span>🚚 Gratis ongkir &gt; Rp2 jt</span><span>🛡️ Garansi resmi</span><span>↩️ Retur 7 hari</span><span>💬 CS 09.00–21.00</span></div>
+
+<section id="produk">
+<h2>Produk</h2>
+<div class="cats" id="cats"></div>
+<div class="tools"><span class="meta" id="cnt"></span>
+<select id="so" aria-label="Urutkan"><option value="p">Terpopuler</option><option value="l">Harga terendah</option><option value="h">Harga tertinggi</option><option value="r">Rating tertinggi</option></select></div>
+<div class="grid" id="gr"></div>
+</section>
+
+<section id="testimoni">
+<h2>Kata pelanggan</h2><p class="sub">Ulasan dari pembeli, dan kamu juga bisa menulis satu.</p>
+<div class="two wide">
+<div class="tg" id="tl"></div>
+<form class="box" id="tf"><h3>Tulis testimoni</h3>
+<label for="tn">Nama</label><input id="tn" required maxlength="30">
+<label for="tr">Rating</label><select id="tr"><option value="5">★★★★★</option><option value="4">★★★★☆</option><option value="3">★★★☆☆</option></select>
+<label for="tt">Komentar</label><textarea id="tt" rows="3" required maxlength="220"></textarea>
+<button class="btn full" style="margin-top:12px">Kirim testimoni</button></form>
+</div></section>
+
+<section id="kontak"><h2>Hubungi kami</h2><p class="sub">Bingung pilih komponen? Tanya dulu, gratis.</p>
+<div class="two">
+<div class="box"><h3>Toko &amp; layanan</h3>
+<p>📍 Indramayu, Jawa Barat<br>🕘 Senin–Sabtu, 09.00–21.00<br>✉️ halo@rakit.id<br>📱 +62 821-3247-7253</p>
+<a class="btn alt" id="wa1" target="_blank" rel="noopener">Chat WhatsApp</a></div>
+<form class="box" id="kf"><h3>Kirim pesan</h3>
+<label for="kn">Nama</label><input id="kn" required>
+<label for="kp">Pertanyaan</label><textarea id="kp" rows="3" required></textarea>
+<button class="btn full" style="margin-top:12px">Kirim pesan</button></form>
+</div></section>
+</div></main>
+
+<footer><div class="wrap">
+<p>© 2026 Rakit.id. Harga dan stok dapat berubah sewaktu-waktu.</p>
+<p class="credit">✿ Dibuat oleh Flora, Intan, Lusi &amp; Meisyah ✿</p>
+</div></footer>
+<a class="wa" id="wa2" target="_blank" rel="noopener">💬 Tanya via WhatsApp</a>
+
+<div class="ov" id="ov"><div class="modal" id="md"></div></div>
+<aside class="drawer" id="dr" aria-label="Keranjang"></aside>
+<div class="toast" id="ts" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
